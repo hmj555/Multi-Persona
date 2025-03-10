@@ -1,0 +1,40 @@
+{
+    "Age": "27",
+    "Gender": "여성",
+    "Job": "대학원생",
+    "Major": "인공지능",
+    "MBTI": "ENFJ",
+    "Self-tag": "쾌활함, 웃음 많음, 성실함, 우울함, 불안함, 유연함",
+    "Episode": {
+        "Role 1": {
+            "Role": "공상가",
+            "Ep1": "나는 어려서부터 상상하기를 좋아했다. 초등학교 때는 수업 중 다른 생각을 하다가 갑자기 웃음을 터트려 친구들로부터 이상한 시선을 받은 적도 있었다. 또, 친구들과 언쟁하거나 토론하는 상황에서 이렇게 흘러갔다면 어땠을까? 하는 생각도 자주 한다. 친구들은 저와 이야기하다보면 가끔 넌 진짜 편견이 없다고 말해주곤 한다. 한 상황으로도 여러가지 방향으로 상상의 나래를 펼쳐보며 생각이 보다 유연해진 것 같다.",
+            "Ep2": "공상과 상상은 나의 중요한 원동력이다. 일명 ‘행복회로’를 돌리면서 제가 원하는 미래를 상상하고, 지금의 내 행동이 그 미래로 나를 이끌 수 있다는 것을 자각할 때 저는 어떤 행동을 할 힘이 생긴다.",
+            "Action": [
+                "1. **Engage in 'What If' Scenarios**: When faced with a decision or problem, I actively imagine various scenarios and outcomes. This practice not only enhances my creative thinking but also allows me to approach situations with greater flexibility. For instance, during discussions or debates, I often explore alternative outcomes, which helps in broadening perspectives and finding innovative solutions.",
+                "2. **Leverage Daydreaming for Motivation**: I consciously use daydreaming as a tool to visualize my desired future. By imagining the steps needed to reach my goals, I gain motivation and clarity on the actions I need to take. This process empowers me to align my current behaviors with my long-term aspirations, making my daydreams a driving force for personal growth and achievement.",
+                "3. **Foster Open-Minded Conversations**: I regularly engage in discussions with friends and colleagues about imaginative ideas and 'what if' scenarios. By sharing my thoughts and encouraging others to contribute, I create a collaborative environment that values diverse perspectives. This practice not only enriches my social interactions but also helps in developing a more open-minded and inclusive approach to problem-solving."
+            ]
+        },
+        "Role 2": {
+            "Role": "시골 출생자",
+            "Ep1": "나는 무안이라는 작은 시골 마을에서 나고 자랐다. 무안은 친구도, 지인들도 한 다리를 건너면 다 알 만큼 작은 도시다. 외향적이고 새로운 것을 좋아하는 나에게는 사랑하는 고향인 동시에 답답한 공간이었다.",
+            "Ep2": "시간이 많이 지나고 처음으로 친구들과 외국의 대도시로 여행을 떠났다. 부모님으로부터 자유로웠고 모두 내 용돈과 내 선택으로 이루어졌다. 그 여행이 너무 설렜기 때문에 저는 큰 도시로 떠나는 것, 여행하는 것을 사랑하게 되었다. 외향적이고 생기 넘치는 분위기를 좋아하던 내가 도시 여행의 기쁨을 남들보다 유난히 더 크게 느끼는 것은 이런 이유라고 생각한다.",
+            "Action": [
+                "1. **Embrace Urban Exploration**: Given your love for vibrant city environments, make it a habit to plan regular trips to urban areas. Engage in activities like visiting museums, attending cultural events, or exploring new neighborhoods. This not only satisfies your extroverted nature but also broadens your perspective by exposing you to diverse cultures and ideas.",
+                "2. **Balance Nature and Urban Life**: While you enjoy the excitement of city life, incorporate regular visits to natural settings, such as parks or countryside retreats, to recharge. This can help reduce stress and improve your emotional well-being, as supported by research on the benefits of nature exposure.",
+                "3. **Foster Social Connections**: Use your outgoing personality to build and maintain a network of friends and acquaintances both in rural and urban settings. Participate in social gatherings, join clubs, or volunteer for community projects. This will enhance your sense of belonging and provide a support system that enriches your life experiences."
+            ]
+        },
+        "Role 3": {
+            "Role": "첫째딸",
+            "Ep1": "한국에서 첫째 딸, 그것도 2살차이 남동생이 있는 첫째 딸은 어디에도 말할 수 없는 고충을 하나씩은 다 가지고 있는 것 같다. 옛날부터 한국에서는 바깥 일은 남자, 집안일은 여자가 하는 분위기다. 그래서 집에 부모님이 안계 시는 날에는 청소, 설거지, 요리 모두 내 몫이었다.",
+            "Ep2": "어릴 때부터 책임감을 많이 요구 받은 탓인지, 저는 남들보다 감정 표현에 서툴고 제 감정에 대해서도 잘 알지 못하게 되었다. 항상 착한 아이로 살아야했기 때문인지 부탁에 대해 거절도 쉽게 하지 못하는 성격이 되었다. 가정이라는 좁은 사회에서는 성격의 문제를 알지 못했지만, 대학이라는 넓은 사회에 나와보니 내가 참 양면성이 많은 성격이라는 것을 깨닫게 되었다.",
+            "Action": [
+                "1. **Taking Initiative in Household Responsibilities**: As the eldest daughter, I often take the lead in managing household chores like cleaning, cooking, and doing the dishes, especially when my parents are not around. This proactive approach helps maintain a tidy and organized home environment and ensures that responsibilities are shared fairly among family members.",
+                "2. **Practicing Assertiveness in Social Settings**: Recognizing my tendency to avoid conflict and always be the \"good child,\" I consciously practice assertiveness by expressing my opinions and setting boundaries in social situations. This involves politely declining requests when necessary and voicing my thoughts during group discussions, which helps me build confidence and improve my interpersonal relationships.",
+                "3. **Balancing Emotional Expression and Responsibility**: Given my upbringing, where I was often required to be responsible and composed, I make an effort to explore and understand my emotions better. This involves journaling my feelings, discussing them with trusted friends, or engaging in activities that allow me to express myself creatively. By doing so, I aim to achieve a healthier balance between responsibility and emotional well-being."
+            ]
+        }
+    }
+}

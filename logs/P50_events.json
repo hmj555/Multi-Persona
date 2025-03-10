@@ -1,0 +1,62 @@
+[
+    {
+        "participantId": "P50",
+        "page": "Intro",
+        "button": "시작하기",
+        "timestamp": "2025-03-09T06:38:21.351Z"
+    },
+    {
+        "participantId": "P50",
+        "page": "Topic",
+        "button": "선택 완료",
+        "timestamp": "2025-03-09T06:43:48.873Z"
+    },
+    {
+        "participantId": "P50",
+        "page": "IntroPer1",
+        "button": "시작하기",
+        "timestamp": "2025-03-09T06:48:24.110Z"
+    },
+    {
+        "participantId": "P50",
+        "page": "chat1/4",
+        "button": "대화 종료",
+        "timestamp": "2025-03-09T07:47:59.460Z"
+    },
+    {
+        "participantId": "P50",
+        "page": "chat2(epi)/5",
+        "button": "대화 종료",
+        "timestamp": "2025-03-09T07:54:16.449Z"
+    },
+    {
+        "participantId": "P50",
+        "page": "PerEval(tag) submitted",
+        "button": "제출하기",
+        "timestamp": "2025-03-09T08:04:21.310Z"
+    },
+    {
+        "participantId": "P50",
+        "page": "PerEval(epi) submitted",
+        "button": "제출하기",
+        "timestamp": "2025-03-09T08:07:01.542Z"
+    },
+    {
+        "participantId": "P50",
+        "page": "EpiEval",
+        "button": "제출하기",
+        "timestamp": "2025-03-09T08:14:28.968Z"
+    },
+    {
+        "participantId": "P50",
+        "page": "chat1(tag)/1",
+        "button": "대화 종료",
+        "timestamp": "2025-03-10T08:31:41.330Z"
+    },
+    {
+        "participantId": "P50",
+        "page": "chat2(epi)/6",
+        "button": "대화 종료",
+        "timestamp": "2025-03-10T09:14:00.823Z"
+    }
+]
