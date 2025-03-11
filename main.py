@@ -407,3 +407,7 @@ async def log_survey(survey: SurveyLog):
         json.dump(logs, f, ensure_ascii=False, indent=4)
 
     return {"message": "설문 응답 저장 완료"}
+
+@app.get("/health")
+async def health_check():
+    return {"status": "ok", "message": "Multi-Persona Backend is running!"}
