@@ -98,7 +98,7 @@ async def save_user_info(participant_id: str, user_data: dict):
 
 
 ################## 3. Topic.js에서 받아오는 정보 ##################
-TOPICS_FILE = "frontend/src/data/topics.json"
+TOPICS_FILE = "topics.json"
 with open(TOPICS_FILE, "r", encoding="utf-8") as f:
     TOPICS_DATA = json.load(f)
 
@@ -248,7 +248,7 @@ def get_user_topics(user_number):
 
 # ✅ src/data/topics.json에서 topic에 맞는 description 가져오기
 def get_topic_description(topic):
-    topics_path = "src/data/topics.json"
+    topics_path = "topics.json"
     if not os.path.exists(topics_path):
         raise HTTPException(status_code=404, detail="Topics data not found")
     
