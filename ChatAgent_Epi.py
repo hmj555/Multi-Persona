@@ -5,6 +5,7 @@ from datetime import datetime
 logging.langsmith("Persona")
 import json
 import os
+from firebase_utils import db 
 
 ## 라이브러리 불러오기
 from langchain_openai import ChatOpenAI
@@ -16,6 +17,26 @@ from langchain_core.messages import HumanMessage, AIMessage
 
 ## ✅ 세션 저장소 (페르소나, 행동 패턴, 토픽, 프롬프트, LLM 실행체 저장)
 store = {}
+
+def get_user_topics(user_number):
+    """Firestore에서 사용자별 선택된 토픽 데이터를 가져옴"""
+    doc_ref = db.collection("user_topics").document(user_number)
+    doc = doc_ref.get()
+
+    if doc.exists:
+        topics_data = doc.to_dict()
+
+        # ✅ Firestore에서 가져온 데이터가 문자열이면 JSON 변환
+        if isinstance(topics_data["epi_topics"], str):
+            topics_data["epi_topics"] = json.loads(topics_data["epi_topics"])
+        if isinstance(topics_data["epi_topic_descriptions"], str):
+            topics_data["epi_topic_descriptions"] = json.loads(topics_data["epi_topic_descriptions"])
+
+        return topics_data
+    else:
+        print(f"🚨 [ERROR] Firestore에서 {user_number}의 토픽 데이터를 찾을 수 없습니다.")
+        return None
+
 
 ## ✅ 대화 이력 저장 함수
 def get_session_history(session_id: str) -> BaseChatMessageHistory:
@@ -59,25 +80,26 @@ def clean_persona(user_number):
 
 ## ✅ 사용자 토픽 불러오기
 def load_user_topic(user_number, session_id):
-    """사용자 주제 데이터 불러오기"""
-    filepath = f"User_Topics/{user_number}.json"
-    if not os.path.exists(filepath):
-        raise FileNotFoundError(f"❌ {filepath} 파일을 찾을 수 없습니다.")
+    """Firestore에서 사용자 주제 데이터 불러오기"""
+    topics_data = get_user_topics(user_number)
+    if not topics_data:
+        raise ValueError(f"🚨 [ERROR] Firestore에서 {user_number}의 토픽 데이터를 찾을 수 없음")
 
-    with open(filepath, "r", encoding="utf-8") as f:
-        topics_data = json.load(f)
-
-    session_number = int(session_id.split("/")[-1])
+    session_number = int(session_id.split("/")[-1])  # ✅ 대화 세션 번호 가져오기
     epi_topics = topics_data.get("epi_topics", [])
     epi_topic_descriptions = topics_data.get("epi_topic_descriptions", [])
-    
-    topic = epi_topics[session_number - 1] if 0 <= (session_number - 1) < len(epi_topics) else "자유 주제"
 
-    # ✅ 토픽 설명 가져오기 (기본값: None)
-    topic_description = None
-    if topic != "자유 주제" and 0 <= (session_number - 1) < len(epi_topic_descriptions):
-        topic_description = epi_topic_descriptions[session_number - 1]
-        
+    topic = (
+        epi_topics[session_number - 1] if 0 <= (session_number - 1) < len(epi_topics) else "자유 주제"
+    )
+
+    # ✅ topic_description 불러오기 (자유 주제 제외)
+    topic_description = (
+        epi_topic_descriptions[session_number - 1]
+        if topic != "자유 주제" and 0 <= (session_number - 1) < len(epi_topic_descriptions)
+        else None
+    )
+
     return topic, topic_description
 
 ## ✅ 세션 초기화 (페르소나, 토픽, LLM 실행체 저장)
@@ -101,10 +123,9 @@ def initialize_session(user_number, session_id):
         store[session_id]["experiencable"] = experiencable
 
     # ✅ 주제 저장 (최초 한 번)
-    if store[session_id]["topic"] is None:
-        topic, topic_description = load_user_topic(user_number, session_id) 
-        store[session_id]["topic"] = topic
-        store[session_id]["topic_description"] = topic_description
+    topic, topic_description = load_user_topic(user_number, session_id)
+    store[session_id]["topic"] = topic
+    store[session_id]["topic_description"] = topic_description
     
 
     # ✅ 프롬프트 생성 (최초 한 번)
@@ -142,7 +163,7 @@ def initialize_session(user_number, session_id):
 
     # ✅ LLM 실행체 생성 (최초 한 번)
     if store[session_id]["llm"] is None:
-        llm = ChatOpenAI(model="gpt-4o", temperature=0.7)
+        llm = ChatOpenAI(model="gpt-4o", temperature=0.7, stream_usage=True)
         store[session_id]["llm"] = store[session_id]["prompt"] | llm
 
 ## ✅ 대화 실행 함수 (세션 내에서 유지)
@@ -154,13 +175,13 @@ def chat(user_number, input_text, session_id):
     if session_id not in store or store[session_id]["llm"] is None:
         initialize_session(user_number, session_id)
         
-    # ✅ 🆕 최신 토픽 불러오기 (세션 저장된 topic이 아니라, 매번 최신 데이터 불러오기)
-    topic, topic_description = load_user_topic(user_number, session_id)
-    store[session_id]["topic"] = topic
-    store[session_id]["topic_description"] = topic_description
+    # # ✅ 🆕 최신 토픽 불러오기 (세션 저장된 topic이 아니라, 매번 최신 데이터 불러오기)
+    # topic, topic_description = load_user_topic(user_number, session_id)
+    # topic = store[session_id]["topic"]
+    # store[session_id]["topic_description"] = topic_description
 
-    # ✅ 🆕 토픽이 바뀌었으면 로그 출력 (디버깅)
-    print(f"📌 [DEBUG] 최신 토픽 업데이트됨: {topic}")
+    # # ✅ 🆕 토픽이 바뀌었으면 로그 출력 (디버깅)
+    # print(f"📌 [DEBUG] 최신 토픽 업데이트됨: {topic}")
 
     # ✅ 현재 세션의 대화 기록 가져오기
     chat_history = get_session_history(session_id).messages
@@ -243,17 +264,10 @@ async def chat_stream(user_number, input_text, session_id):
 
 
 
-
-
-## ✅ 대화 로그 저장 함수
 def save_chat_log(user_number, session_id):
-    """store에 저장된 대화 이력을 JSON 파일로 저장"""  
+    """대화 이력을 Firestore에 저장"""
     chat_history = store.get(session_id, {}).get("history", ChatMessageHistory()).messages
     session_number = int(session_id.split("/")[-1])
-
-    save_dir = f"User_ChatLog/{user_number}_Epi"
-    os.makedirs(save_dir, exist_ok=True)
-    file_path = os.path.join(save_dir, f"{session_number}.json")
 
     chat_log = []
     for msg in chat_history:
@@ -263,13 +277,40 @@ def save_chat_log(user_number, session_id):
             "topic": store[session_id]["topic"],
             "role": "user" if isinstance(msg, HumanMessage) else "ai",
             "content": msg.content,
-            "timestamp": getattr(msg, "timestamp", datetime.now().isoformat())
+            "timestamp": getattr(msg, "timestamp", datetime.now().isoformat()),
         })
 
-    with open(file_path, "w", encoding="utf-8") as f:
-        json.dump(chat_log, f, ensure_ascii=False, indent=4)
+    # ✅ Firestore에 저장
+    db.collection("chat_logs").document(user_number).collection("epi").document(str(session_number)).set({"messages": chat_log})
 
-    print(f"✅ 대화 이력이 저장되었습니다: {file_path}")
+    print(f"✅ Firestore에 대화 로그가 저장되었습니다: {user_number} - 세션 {session_number}")
+
+
+## ✅ 대화 로그 저장 함수
+# def save_chat_log(user_number, session_id):
+#     """store에 저장된 대화 이력을 JSON 파일로 저장"""  
+#     chat_history = store.get(session_id, {}).get("history", ChatMessageHistory()).messages
+#     session_number = int(session_id.split("/")[-1])
+
+#     save_dir = f"User_ChatLog/{user_number}_Epi"
+#     os.makedirs(save_dir, exist_ok=True)
+#     file_path = os.path.join(save_dir, f"{session_number}.json")
+
+#     chat_log = []
+#     for msg in chat_history:
+#         chat_log.append({
+#             "session_id": session_id,
+#             "persona": "epi",
+#             "topic": store[session_id]["topic"],
+#             "role": "user" if isinstance(msg, HumanMessage) else "ai",
+#             "content": msg.content,
+#             "timestamp": getattr(msg, "timestamp", datetime.now().isoformat())
+#         })
+
+#     with open(file_path, "w", encoding="utf-8") as f:
+#         json.dump(chat_log, f, ensure_ascii=False, indent=4)
+
+#     print(f"✅ 대화 이력이 저장되었습니다: {file_path}")
 
 # ## ✅ 테스트 실행
 # if __name__ == "__main__":
