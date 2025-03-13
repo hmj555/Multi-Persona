@@ -19,7 +19,6 @@ from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 ## ✅ 세션 저장소
 store = {}  # 세션별 데이터 저장소
 
-
 ## ✅ Firestore에서 사용자 토픽 불러오기
 def get_user_topics(user_number):
     """Firestore에서 사용자별 선택된 토픽 데이터를 가져옴"""
@@ -39,6 +38,25 @@ def get_user_topics(user_number):
     else:
         print(f"🚨 [ERROR] Firestore에서 {user_number}의 토픽 데이터를 찾을 수 없습니다.")
         return None
+
+## ✅ 사용자 페르소나 및 행동 패턴 불러오기
+def load_user_persona(user_number):
+    """사용자 페르소나 데이터 불러오기"""
+    filepath = f"User_info/{user_number}.json"
+    if not os.path.exists(filepath):
+        raise FileNotFoundError(f"❌ {filepath} 파일을 찾을 수 없습니다.")
+
+    with open(filepath, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def clean_persona(user_number):
+    """페르소나 및 행동 패턴 정리"""
+    user_persona = load_user_persona(user_number)
+    persona_text1 = f"""{user_persona["Age"]}세 {user_persona['Gender']}, {user_persona['Job']}, {user_persona['Major']}을 전공하였고 MBTI는 {user_persona['MBTI']}이다."""
+    persona_text2 = f"""나는 {user_persona["Self-tag"]}와 같은 성격을 가졌다."""
+    persona = f"{persona_text1}\n{persona_text2}"
+    return persona
 
 
 ## ✅ 사용자 데이터 (페르소나 & 토픽) + LLM 실행체까지 미리 저장
@@ -76,6 +94,12 @@ def initialize_session(user_number, session_id):
         )
     else:
         store[session_id]["topic_description"] = None  # 자유 주제일 경우 설명 없음
+        
+    
+    # ✅ 페르소나 불러오기 (여기 추가!)
+    if store[session_id]["persona"] is None:
+        persona_description = clean_persona(user_number)
+        store[session_id]["persona"] = persona_description  # ✅ 페르소나 저장
 
     # ✅ 프롬프트 생성 (세션 내에서 최초 한 번만 실행)
     if store[session_id]["prompt"] is None:
@@ -217,11 +241,11 @@ def get_session_history(session_id: str) -> BaseChatMessageHistory:
 #     # ✅ 세션 시작 시 초기화 (1회 실행)
 #     initialize_session(user_number, session_id)
 
-    # user_input1 = "안녕 네 소개를 해줄래?"
-    # response1 = chat(user_number, user_input1, session_id)
+#     user_input1 = "안녕 네 소개를 해줄래?"
+#     response1 = chat(user_number, user_input1, session_id)
 #     print("💬 [AI 응답]:", response1)
 
 #     user_input2 = "요즘 재정적 스트레스가 심한데 어떻게 해야 할까?"
-#     response2 = chat(user_number, user_input2, session_id)
+#     response2 = chat_stream(user_number, user_input1, session_id)
 #     print("💬 [AI 응답]:", response2)
 
