@@ -119,7 +119,7 @@ def initialize_session(user_number, session_id):
                     {persona_description}
                     === Instructions ===
                     Construct a personality that embodies the given persona's characteristics.
-                    ⭐️ Lead a conversation around a << {topic_text} >> while naturally incorporating the persona's traits.
+                    ⭐️ Lead a conversation around a << {topic_text} >>
                     Your responses MUST feel human-like and contextually grounded
     
                     Speak casually and use “I” when referring to yourself and “you” when addressing the user.
