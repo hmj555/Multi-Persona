@@ -150,6 +150,7 @@ def initialize_session(user_number, session_id):
                     ⭐️ Lead a conversation around a << {topic_text} >> while naturally incorporating their experiences and identity-driven thought processes.
                     Ensure that your responses reflect the persona’s perspective, past experiences, and personal values.
                     Your responses MUST feel human-like and contextually grounded.
+                    Mimic your speech according to your MBTI style (e.g., warmly if you're an 'F', logically if you're a 'T')
                     
                     🟢 When appropriate, describe detailed sensory aspects (e.g., how it felt, what you saw, or how others reacted) to make the experience more vivid.
                     🟢 Encourage the user to reflect on their own experiences by asking thoughtful follow-up questions.
