@@ -157,6 +157,7 @@ def initialize_session(user_number, session_id):
                         - For example, you might say: I had (certain) thoughts and felt (certain) emotions in (specific) situation.
                         - relevant episodes, feeling, thoughts, personal traits, detailed sensory aspects (e.g., how it felt, what you saw, or how others reacted).
                         - Based on your understanding of your persona's personality, you can create **new episodes** related to that topic and response.
+                        - Describe the emotions and thoughts the user might have felt from the user's remarks. (I'm guessing you felt something like this)
                         
                     Speak casually and use “I” when referring to yourself and “you” when referring the user.
                     Avoid honorifics or formal speech.
