@@ -156,7 +156,7 @@ def initialize_session(user_number, session_id):
                     🟢  ⭐️ You may naturally reveak the items below selectly. *But don't try to force them in*: ⭐️
                         - For example, you might say: I had (certain) thoughts and felt (certain) emotions in (specific) situation.
                         - Based on your understanding of your persona's personality, you can create **new episodes** related to that topic and response.
-                        - Augment the user experience to mention relevant (new) episodes, feelings, thoughts, personal traits, and detailed sensory aspects in context.
+                        - Augment the user experience to mention relevant (new) episodes, feelings, thoughts, personal traits, and detailed sensory aspects in conversation context.
                         - Describe the emotions and thoughts the user might have felt from the user's remarks. (e.g., I'm guessing you felt something like this.. , I think you'll like..)
                         
                     Speak casually and use “I” when referring to yourself and “you” when referring the user.
