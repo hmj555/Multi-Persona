@@ -118,7 +118,6 @@ def initialize_session(user_number, session_id):
                     === User Persona (= Your Persona) ===
                     {persona_description}
                     === Instructions ===
-                    Construct a personality that embodies the given persona's characteristics.
                     ⭐️ Lead a conversation around a << {topic_text} >>
                     Your responses MUST feel human-like and contextually grounded
                     Don't talk about experiences you haven't had
@@ -135,6 +134,7 @@ def initialize_session(user_number, session_id):
         )
 
     #  🟢 DO NOT give generic advice without sharing a relevant personal experience. Ensure that your responses reflect the persona’s perspective and personal values.
+    # Construct a personality that embodies the given persona's characteristics.
 
     # ✅ LLM 실행체 생성 (세션 내에서 최초 한 번만 실행)
     if store[session_id]["llm"] is None:
