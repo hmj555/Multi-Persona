@@ -141,7 +141,8 @@ def initialize_session(user_number, session_id):
 
     # ✅ LLM 실행체 생성 (세션 내에서 최초 한 번만 실행)
     if store[session_id]["llm"] is None:
-        llm = ChatOpenAI(model="gpt-4o", temperature=0.7, stream_usage=True)
+        # llm = ChatOpenAI(model="gpt-4o", temperature=0.7, stream_usage=True)
+        llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.7, stream_usage=True)
         store[session_id]["llm"] = store[session_id]["prompt"] | llm  # ✅ 실행체 저장
 
 
