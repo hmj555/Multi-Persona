@@ -1,0 +1,287 @@
+body {
+    background-color: hwb(300 38% 60% / 0.037); /* 하늘색 배경 */
+    /* padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;  */
+    height: 80vh; /* 화면 전체 높이 */
+  }
+  
+  .fixed-shape {
+    width: 100%; /* info-container와 동일한 너비 */
+    max-width: 950px;
+    position: absolute;
+    top: 20px; /* info-container 위에 걸쳐 보이게 */
+    left: 50%;
+    transform: translateX(-50%);
+    /* width: 300px;  */
+    height: 53px;
+    background-color: #ffffff; /* 도형 색상 */
+    border-radius: 10px; /* 원형 모양 */
+   
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color:#042a53;
+    z-index: 1000; /* 가장 위에 표시 */
+  }
+  
+  /* ✅ 도형 안의 아이콘 또는 텍스트 */
+  .fixed-shape span {
+    font-family: 'NanumSquareRound', sans-serif;
+    font-size: 15px;
+    color: rgb(5, 5, 5);
+    font-weight: bold;
+  
+  }
+  .fixed-shape p {
+    font-family: 'NanumSquareRound', sans-serif;
+    font-size: 15px;
+    color: #840bca;
+    font-weight: bold;
+  
+  }
+  
+  
+  .epieval-container {
+    max-width: 930px;
+    margin: 20px auto;
+    padding: 30px 80px;
+    position: relative;
+    bottom: 0;
+    left: 0%;
+    padding: 30px 80px;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    border-radius: 35px; 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    line-height: 1.6;
+    height: 80vh;
+    /* max-height: 670px; 최대 높이 설정 */
+    overflow-y: auto; /* 내부 스크롤 활성화 */
+    overflow-y: hidden; 
+    overflow-x: hidden;
+    padding-bottom: 80px;
+    display: flex;
+    /* justify-content: flex-start; */
+    justify-content: flex-end; 
+    flex-direction: column;
+    position: relative;
+  }
+  /* 스크롤바 스타일링 (Chrome, Edge, Safari) */
+  .epieval-container::-webkit-scrollbar {
+  width: 8px;
+    }
+  
+    .epieval-container::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+      border-radius: 8px;
+    }
+    
+    .epieval-container::-webkit-scrollbar-thumb {
+      background: #b0b0b0; 
+      border-radius: 8px;
+    }
+    
+    .epieval-container::-webkit-scrollbar-thumb:hover {
+      background: #888; 
+    }
+      
+      .epi-content {
+        top: 60px;
+        left: 32%;
+        position: absolute;
+        font-size:21px;
+        color: #333; /* 검정색 */
+        font-weight: bold;
+        margin-left:10px;
+      }
+
+      .epi-divider {
+        width: 84%;
+        height: 1px;
+        top: 84px;
+        left: 10%;
+        position: absolute;
+        background-color: #d7d7d7; /* ✅ 보라색 계열 */
+        border: none;
+        margin: 18px 0 13px;
+        z-index: 1000;
+        /* margin-left: -5.5%; */
+      }
+      
+       .epieval-body {
+        position: relative; /* ✅ absolute → relative로 변경 */
+        width: 94%; /* ✅ pereval-container 내부에서 최대한 너비 차지 */
+        overflow-y: auto; /* ✅ 내부 스크롤 활성화 */
+        height: 80%;
+        padding: 20px; /* ✅ 패딩 조정 */
+        margin: 2% 5%; /* ✅ 중앙 정렬 */
+        scrollbar-width: thin;
+        scrollbar-color: #aaa #f0f0f0;
+    }
+    .epieval-body::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    .epieval-body::-webkit-scrollbar-thumb {
+        background-color: #aaa;
+        border-radius: 4px;
+    }
+    
+    .epieval-body::-webkit-scrollbar-track {
+        background-color: #f0f0f0;
+    }
+
+
+    .survey-container {
+    background-color: #ffffff; /* ✅ 배경을 흰색으로 */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+      /* 질문 스타일 */
+      .episurvey-question {
+        margin-bottom: 20px;
+        text-align: left;
+        margin-left: 40px;
+      }
+      /* 제출 버튼 */
+      .button.submit-button {
+        margin-top: 0%;
+        margin-bottom: -70px;
+        margin-left: 45%;
+        width: 12%;
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 8px;
+        border: none;
+        background-color: #505050c7;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+      
+      .button.submit-button:hover {
+        background-color: #000000;
+      }
+    
+
+      /* ✅ 평가 기준 라벨 */
+.criterion-label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #444;
+  }
+
+  /* ✅ 에피소드 컨테이너 */
+  .episode-container {
+    background-color: #d7e5f048;
+    border-radius: 12px;
+    padding: 4px 10px;
+    margin-bottom: 10px; /* ✅ 설문과 간격 추가 */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    margin-left: -20px;
+}
+  
+  .episode-container h3 {
+    font-size: 18px;
+    color: #444344;
+    margin-bottom: 8px;
+    text-align: center;
+    font-family: 'NanumSquareRound', sans-serif;
+  }
+  
+  .episode-content {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+  .episode-wrapper {
+    margin-bottom: 10px;
+}
+
+/* ✅ 평가 문항 */
+.epieval-criterion-label {
+    font-size: 14px;
+    font-weight: bold ; 
+    margin-bottom: 6px;
+    margin-left: 55px;
+    color: #444 t;
+}
+
+/* ✅ 척도 컨테이너 */
+.epieval-scale-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 38px;
+    margin-bottom: 40px;
+    padding-left: 90px;
+}
+
+/* ✅ 척도 라벨 */
+.epieval-scale-label {
+    font-size: 13px;
+    width: 100px;
+    text-align: center;
+    color: #222 ;
+    line-height: 1.2;
+}
+
+/* ✅ 척도 버튼 스타일 */
+.epieval-scale-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-left:  */
+    font-size: 13px ;
+    color: #333 ;
+}
+
+.epieval-scale-option input {
+    margin-bottom: 5px;
+}
+
+/* ✅ "기존 경험" 하이라이팅 스타일 */
+.epieval-highlight-tooltip {
+    color: #5a3ec8;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    text-decoration: underline;
+  }
+  
+  /* ✅ 툴팁 스타일 */
+  .epieval-tooltip {
+    visibility: hidden;
+    width: 280px;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: left;
+    padding: 8px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+    white-space: normal;
+  }
+  
+  /* ✅ 마우스를 올리면 툴팁 표시 */
+  /* .epieval-highlight-tooltip:hover .tooltip {
+    visibility: visible;
+  } */
+  .epieval-highlight-tooltip:hover .epieval-tooltip {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+  }

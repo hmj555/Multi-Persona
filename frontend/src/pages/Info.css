@@ -1,0 +1,287 @@
+/* Info.css */
+
+body {
+  background-color: hwb(300 38% 60% / 0.037); /* 하늘색 배경 */
+  /* padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;  */
+  height: 80vh; /* 화면 전체 높이 */
+}
+/* 
+.page-container {
+  position: relative; 
+  width: 100%;
+  height: 100vh; 
+  background-color: #f6f9fc; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* ✅ 고정된 도형 */
+.fixed-shape {
+  width: 100%; /* info-container와 동일한 너비 */
+  max-width: 950px;
+  position: absolute;
+  top: 20px; /* info-container 위에 걸쳐 보이게 */
+  left: 50%;
+  transform: translateX(-50%);
+  /* width: 300px;  */
+  height: 53px;
+  background-color: #ffffff; /* 도형 색상 */
+  border-radius: 10px; /* 원형 모양 */
+ 
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color:#042a53;
+}
+
+/* ✅ 도형 안의 아이콘 또는 텍스트 */
+.fixed-shape span {
+  font-family: 'NanumSquareRound', sans-serif;
+  font-size: 15px;
+  color: rgb(5, 5, 5);
+  font-weight: bold;
+
+}
+.fixed-shape p {
+  font-family: 'NanumSquareRound', sans-serif;
+  font-size: 15px;
+  color: #840bca;
+  font-weight: bold;
+
+}
+
+
+.info-container {
+  max-width: 930px;
+  margin: 20px auto;
+  padding: 30px 80px;
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  border-radius: 35px; 
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  line-height: 1.6;
+  height: 87vh;
+  /* max-height: 670px; 최대 높이 설정 */
+  overflow-y: auto; /* 내부 스크롤 활성화 */
+  overflow-x: hidden; 
+}
+/* 스크롤바 스타일링 (Chrome, Edge, Safari) */
+.info-container::-webkit-scrollbar {
+width: 8px;
+  }
+
+  .info-container::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 8px;
+  }
+  
+  .info-container::-webkit-scrollbar-thumb {
+    background: #b0b0b0; 
+    border-radius: 8px;
+  }
+  
+  .info-container::-webkit-scrollbar-thumb:hover {
+    background: #888; 
+  }
+  
+  
+  .info-container header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .info-container h1 {
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* border-bottom: 2px solid #eee; */
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+  
+  .info-container h2 {
+    font-size: 16px;
+    color: #555;
+    margin-top: 30px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+  }
+
+  .info-container p {
+    font-size: 13px;
+    color: #444;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+  
+  .info-container input, .info-container textarea {
+    width: 97%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 1px;
+  }
+  
+  .info-container textarea {
+    resize: vertical;
+    min-height: 80px;
+    margin-bottom: 1px;
+  }
+  
+  .info-container .role-section {
+    background: #ffffff;
+    padding: 10px 35px;
+    border-radius: 3px;
+    margin-top: -5px;
+    margin-bottom: -10px;
+    font-size: 2px;
+  }
+  .role-section input::placeholder,
+  .role-section textarea::placeholder {
+    font-size: 14px; /* ✅ 원하는 크기로 조정 */
+    color: #999; /* ✅ 색상 조정 (선택사항) */
+    opacity: 1; /* ✅ 투명도 조정 (기본적으로 placeholder는 반투명) */
+  }
+
+  
+  .info-container .submit-button {
+    /* background-color: #007bff; */
+    background-color: #959595;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    transition: background-color 0.3s ease;
+  }
+  
+  .info-container .submit-button:hover {
+    background-color: #000000;
+  }
+
+  /* 성격 태그 예제 스타일 */
+.self-tags .example {
+    width: 97%;
+    background: #cfe5f931;
+    /* background: #eef5ff; */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0;
+    border-left: 4px solid #4a6171;
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 2px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+    background-color: rgba(248, 243, 250, 0.2);
+    /* background-color: #cfe5f931; */
+    border: 0.1px solid rgba(140, 87, 206, 0.4);
+    box-shadow: 0px 2px 7px rgba(140, 87, 206, 0.3);
+    /* border: 2px solid #4a6171; */
+    border-radius: 20px; /* 둥근 사각형 */
+    cursor: default;
+    user-select: none;
+    margin-left: 6px;
+  }
+  
+  /* 역할 & 에피소드 예제 스타일 */
+  .narrative .example-container {
+    width: 95%;
+    /* background: #eef5ff; */
+    background: rgba(248, 243, 250, 0.2);
+    padding: 10px;
+    border-radius: 5px ;
+    font-size: 15px;
+    color: #333;
+    margin: 10px 0;
+    /* border: 2px solid #4a6171; */
+    border: 0.1px solid rgba(140, 87, 206, 0.4);
+    box-shadow: 0px 2px 6px rgba(140, 87, 206, 0.3);
+    border-radius: 25px;
+    /* border-left: 4px solid #4a6171; */
+  }
+
+  .narrative .example-title {
+    font-family: 'NanumSquareNeo Bold', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    /* color: #4a6171; */
+    text-align: left;
+    margin-top: 3px;
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+  
+  .narrative .example-text {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.5;
+    margin: 2px 20px; /* 좌우 여백 증가 */
+    margin-bottom: 4px;
+  }
+
+  white-space: pre-wrap;
+
+  .experiment-procedure strong {
+    font-family: 'NanumSquareNeo Bold', sans-serif;
+    font-weight: bold;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #b4b2b2; /* 기본 테두리 색 */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out; /* 부드러운 전환 효과 */
+  }
+  
+  /* ✅ 입력 필드 포커스 시 스타일 변경 */
+  input:focus, textarea:focus {
+    border: 2px solid #000000; /* 포커스 시 테두리 색 변경 */
+    box-shadow: 0px 0px 1.5px rgba(98, 99, 99, 0.2); /* 약한 그림자 효과 */
+  }
+
+
+/* ✅ 2열 레이아웃 적용 */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2개의 열로 정렬 */
+  gap: 0; /* 간격 조정 */
+  margin-top: 20px;
+}
+
+/* 기존 input 스타일 유지 */
+.grid-container input {
+  width: 80%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+  margin: 6px auto;
+  
+}
+
+.grid-container input:focus {
+  border: 1px solid #4a6171; /* 포커스 효과 */
+}

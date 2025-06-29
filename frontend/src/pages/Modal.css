@@ -1,0 +1,167 @@
+/* ✅ 모달 전체 스타일 */
+.chat-modal-container {
+  position: absolute ;
+  top: 50% ; /* ✅ 화면 중앙 정렬 */
+  left: 50% ;
+  transform: translate(-50%, -50%);
+  width: 450px; /* ✅ 모달 최대 너비 */
+  background-color: #12121296;
+  border-radius: 27px; /* ✅ 둥근 모서리 */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25); /* ✅ 그림자 효과 */
+  z-index: 1000;
+  padding: 0px 40px; /* ✅ 내부 패딩 조정 */
+}
+
+/* ✅ 모달 내용 영역 (스크롤 활성화) */
+.chat-modal-container-body {
+  padding: 24px 18px; /* ✅ 내부 패딩 */
+  width: 100%; /* ✅ 모달 너비와 동일하게 조정 */
+  height: 360px; /* ✅ 모달 크기와 비슷하게 조정 */
+  max-height: 400px; /* ✅ 최대 높이 지정 */
+  overflow-y: auto; /* ✅ 스크롤 가능하도록 설정 */
+  scrollbar-width: thin;
+  scrollbar-color: #bbb #f0f0f0;
+  /* overflow: visible; */
+}
+
+/* ✅ 스크롤바 스타일 */
+.chat-modal-container-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* ✅ 모달 헤더 (타이틀 & 닫기 버튼) */
+.chat-modal-container-header {
+  padding: 10px 0;
+  margin-top: 8px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ✅ 모달 제목 스타일 */
+.chat-modal-container-title {
+  font-weight: 700;
+  font-size: 23px;
+  margin: 0 auto; /* ✅ 중앙 정렬 */
+  text-decoration: none; /* ✅ 밑줄 제거 */
+  border-bottom: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* ✅ 부모 컨테이너 내에서 중앙 정렬 */
+  text-align: center; /* ✅ 텍스트 중앙 정렬 */
+}
+
+/* ✅ 텍스트 입력창 (설문 응답용) */
+.textarea {
+  width: 160%; /* ✅ 입력창 너비 조정 */
+  min-height: 80px; /* ✅ 최소 높이 설정 */
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+}
+
+/* ✅ 모달 하단 버튼 영역 */
+.chat-modal-container-footer {
+  padding: 10px 32px;
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #ddd;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ✅ 버튼 스타일 (일반) */
+.modal-button {
+  padding: 9px 20px ;
+  border-radius: 8px ;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.15s ease;
+  border: none;
+}
+
+/* ✅ 주요 버튼 (제출 버튼) */
+.modal-button.is-primary {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+/* ✅ 주요 버튼 (호버 효과) */
+.modal-button.is-primary:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* ✅ 설문 문항 스타일 */
+.modal-survey-question {
+  margin-bottom: 0px ;
+  margin-left: 5% ;
+}
+
+/* ✅ 7점 척도 배치 */
+.modal-scale-container {
+  margin-top: 30px ;
+  margin-bottom: 28px;
+  display: flex;
+  margin-left: -60px ;
+  gap: 15px ;
+  justify-content: center ;
+}
+
+.modal-scale-label {
+  font-family: 'NanumSquareNeo', sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center; 
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0; /* 좌우 간격 */
+  color:rgb(255, 255, 255)
+}
+
+/* ✅ 각 점수 옵션 스타일 */
+.modal-scale-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+/* ✅ 라디오 버튼 정렬 */
+.modal-scale-option input {
+  margin-bottom: 5px;
+}
+
+.icon-button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.15s ease;
+  margin-top: -10px;
+}
+
+.icon-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-button:hover, .icon-button:focus {
+  background-color: #dfdad7;
+}

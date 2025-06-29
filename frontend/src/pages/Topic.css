@@ -1,0 +1,274 @@
+/* Topic.css */
+
+body {
+  background-color: hwb(300 38% 60% / 0.037); /* 하늘색 배경 */
+  /* padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;  */
+  height: 80vh; /* 화면 전체 높이 */
+}
+
+
+.fixed-shape {
+  width: 100%; /* info-container와 동일한 너비 */
+  max-width: 950px;
+  position: absolute;
+  top: 20px; /* info-container 위에 걸쳐 보이게 */
+  left: 50%;
+  transform: translateX(-50%);
+  /* width: 300px;  */
+  height: 53px;
+  background-color: #ffffff; /* 도형 색상 */
+  border-radius: 10px; /* 원형 모양 */
+ 
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color:#042a53;
+  z-index: 1000; /* 가장 위에 표시 */
+}
+
+/* ✅ 도형 안의 아이콘 또는 텍스트 */
+.fixed-shape span {
+  font-family: 'NanumSquareRound', sans-serif;
+  font-size: 15px;
+  color: rgb(5, 5, 5);
+  font-weight: bold;
+
+}
+.fixed-shape p {
+  font-family: 'NanumSquareRound', sans-serif;
+  font-size: 15px;
+  color: #840bca;
+  font-weight: bold;
+
+}
+
+
+.topic-container {
+  max-width: 930px;
+  margin: 20px auto;
+  padding: 30px 80px;
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  border-radius: 35px; 
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  line-height: 1.6;
+  height: 87vh;
+  /* max-height: 670px; 최대 높이 설정 */
+  overflow-y: auto; /* 내부 스크롤 활성화 */
+  overflow-x: hidden; 
+  /* position: relative; */
+}
+/* 스크롤바 스타일링 (Chrome, Edge, Safari) */
+.topic-container::-webkit-scrollbar {
+width: 8px;
+  }
+
+  .topic-container::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 8px;
+  }
+  
+  .topic-container::-webkit-scrollbar-thumb {
+    background: #b0b0b0; 
+    border-radius: 8px;
+  }
+  
+  .topic-container::-webkit-scrollbar-thumb:hover {
+    background: #888; 
+  }
+  
+  .topic-container header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+
+  .topic-container h1 {
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* border-bottom: 2px solid #eee; */
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+  
+  .topic-container h2 {
+    width: 100%;
+    font-size: 16px;
+    color: #555;
+    margin-top: 30px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    padding-left: 10px;
+  }
+
+  .topic-container p {
+    font-size: 13px;
+    color: #444;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+  
+  .category {
+    margin: 30px auto;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    width: 97%;
+    text-align: left;
+    /* background: #f9f9f9; */
+    /* background: rgba(248, 243, 250, 0.386); */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3열 레이아웃 */
+    gap: 10px; /* 체크박스 간 간격 */
+  }
+
+  .category-title {
+    font-size: 20px;
+    color: #555;
+    margin-top: 10px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+  .checkbox-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3열 레이아웃 */
+    gap: 10px; /* 간격 조정 */
+    border-radius: 6px;
+    margin-top: 10px; /* 제목과 간격 조정 */
+}
+  
+  .checkboxLabel {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    font-size: 13px;
+    color: #333;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+    transition: all 0.3s ease-in-out; /* 부드러운 애니메이션 */
+    cursor: pointer;
+    position: relative;
+  }
+
+  .checkboxLabel:hover {
+    background: linear-gradient(135deg, #ffffff, #f4e9ff); /* 보라색 그라데이션 */
+    box-shadow: 0px 4px 10px rgba(140, 87, 206, 0.5); /* 보라색 그림자 */
+    color: #0b0b0b; /* 텍스트 색상을 흰색으로 변경 */
+    transform: scale(1.03); /* 살짝 확대 효과 */
+}
+
+/* ✅ 숨겨진 체크박스 */
+.hidden-checkbox {
+  display: none;
+}
+
+/* ✅ 기본 버튼 스타일 (Select +) */
+.checkboxLabel .select-button {
+  position: absolute;
+  right: 15px;
+  background: #f5f6f8;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #6b7280;
+  border: 1px solid #e1e5e8cd;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ✅ 체크된 경우 (Selected) */
+.checkboxLabel.selected {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(244, 233, 255, 0.9));
+  /* background: linear-gradient(135deg, #ffffff, #f4e9ff); */
+  /* box-shadow: 0px 3px 5px rgba(140, 87, 206, 0.5); */
+  box-shadow: 0px 4px 5px rgba(140, 87, 206, 0.2);
+  color: #0b0b0b;
+}
+
+
+.checkboxLabel.selected .select-button {
+  background: #000000;
+  color: white;
+  border: none;
+}
+
+/* ✅ 선택된 버튼 스타일 (Selected) */
+.checkboxLabel input[type="checkbox"]:checked + .select-button {
+  background: #9333ea;
+  color: white;
+  border: none;
+  content: "Selected";
+}
+  
+  /* input[type="checkbox"] {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+  } */
+
+  
+  .selectionCount {
+    font-family: 'NanumSquareRound', sans-serif;
+    font-weight: 1000;
+    font-size: 14px;
+    color: #4a6171;
+    /* display: block; */
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 10px; */
+    /* margin-bottom: 5px; */
+  }
+  
+  .submitButton {
+    background-color: #505050c7;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .submitButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .submitButton:hover:not(:disabled) {
+    background-color: #000000;
+  }
+  
+
+  .tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    /* white-space: nowrap; */
+    z-index: 1000;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.2s ease-in-out;
+}
+
+white-space: pre-wrap;
+
+.experiment-procedure strong {
+  font-family: 'NanumSquareNeo Bold', sans-serif;
+  font-weight: bold;
+}
