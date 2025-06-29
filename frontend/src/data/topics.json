@@ -1,0 +1,603 @@
+[
+    {
+        "index": 1,
+        "category": "Emotional Support",
+        "title_en": "Coping with homesickness",
+        "title_ko": "향수병 극복하기",
+        "description_en": "Users missing home talk to a conversational agent for comfort, which provides coping strategies and ways to stay connected with loved ones.",
+        "description_ko": "고향이 그리운 사용자들이 에이전트와 대화하며 위로를 받으며, 향수병을 극복하는 전략과 가족 및 친구들과 연결되는 방법을 얻습니다."
+    },
+    {
+        "index": 2,
+        "category": "Emotional Support",
+        "title_en": "Supporting creative expression",
+        "title_ko": "창의적 표현 지원하기",
+        "description_en": "Users wanting to explore creativity talk to a conversational agent, which encourages artistic pursuits and overcoming creative blocks.",
+        "description_ko": "창의성을 탐구하고 싶은 사용자들이 에이전트와 대화하며, 예술적 활동을 장려하고 창작의 어려움을 극복하도록 돕습니다."
+    },
+    {
+        "index": 3,
+        "category": "Emotional Support",
+        "title_en": "Discussions on sleep issues",
+        "title_ko": "수면 문제 상담하기",
+        "description_en": "Users having trouble sleeping want to talk with a conversational agent for understanding and suggestions on how to sleep better.",
+        "description_ko": "수면에 어려움을 겪는 사용자들이 에이전트와 대화하며, 수면을 개선할 수 있는 방법과 조언을 받습니다."
+    },
+    {
+        "index": 4,
+        "category": "Emotional Support",
+        "title_en": "Overcoming impostor syndrome",
+        "title_ko": "가면 증후군 극복하기",
+        "description_en": "Users feeling inadequate despite their achievements talk with a conversational agent to gain confidence and self-assurance.",
+        "description_ko": "자신의 성취에도 불구하고 부족함을 느끼는 사용자들이 에이전트와 이야기하며 자신감을 얻고, 자기 확신을 키울 수 있도록 돕습니다."
+    },
+    {
+        "index": 5,
+        "category": "Emotional Support",
+        "title_en": "Dealing with bullying",
+        "title_ko": "괴롭힘 대처하기",
+        "description_en": "Users experiencing bullying seek advice and comfort from a conversational agent on handling the situation.",
+        "description_ko": "괴롭힘을 당하는 사용자들이 에이전트에게 조언과 위로를 받고, 상황을 대처하는 방법을 찾습니다."
+    },
+    {
+        "index": 6,
+        "category": "Emotional Support",
+        "title_en": "Dealing with procrastination",
+        "title_ko": "미루는 습관 극복하기",
+        "description_en": "Users struggling with procrastination receive encouragement from a chatbot, which suggests techniques to improve focus and productivity.",
+        "description_ko": "미루는 습관으로 어려움을 겪는 사용자들이 에이전트로부터 격려를 받고, 집중력과 생산성을 향상시키는 기법을 제안받습니다."
+    },
+    {
+        "index": 7,
+        "category": "Emotional Support",
+        "title_en": "Coping with aging concerns",
+        "title_ko": "노화 걱정 극복하기",
+        "description_en": "Users worried about aging discuss with a chatbot for reassurance, perspective, and advice on aging positively.",
+        "description_ko": "노화에 대한 걱정을 가진 사용자들이 에이전트와 이야기하며 안심하고, 긍정적인 시각으로 노화를 볼수 있도록 조언을 받습니다."
+    },
+    {
+        "index": 8,
+        "category": "Emotional Support",
+        "title_en": "Facing academic pressure",
+        "title_ko": "학업 스트레스 극복하기",
+        "description_en": "Students overwhelmed by academic demands engage with a chatbot for reassurance and strategies to manage stress and workload.",
+        "description_ko": "학업 부담으로 스트레스를 받는 학생들이 에이전트와 대화하여 위로를 받고, 스트레스 관리 및 학업 부담을 조절하는 전략을 배웁니다."
+    },
+    {
+        "index": 9,
+        "category": "Emotional Support",
+        "title_en": "Facing fears of intimacy",
+        "title_ko": "친밀감 두려움 극복하기",
+        "description_en": "Users with fears of intimacy engage with a chatbot for understanding, reassurance, and advice on building trust.",
+        "description_ko": "친밀감에 대한 두려움을 가진 사용자들이 에이전트와 대화하여 이해받고, 관계에서 신뢰를 형성하는 방법을 배우며 안심할 수 있도록 돕습니다."
+    },
+    {
+        "index": 10,
+        "category": "Emotional Support",
+        "title_en": "Handling ethical dilemmas",
+        "title_ko": "윤리적 딜레마 해결하기",
+        "description_en": "Users facing ethical challenges discuss their concerns with a conversational agent, which provides a non-judgmental space to explore values and options.",
+        "description_ko": "윤리적 문제로 고민하는 사용자들이 에이전트와 대화하며 비판 없이 자신의 가치관과 선택지를 탐색할 수 있는 기회를 가집니다."
+    },
+    {
+        "index": 11,
+        "category": "Emotional Support",
+        "title_en": "Managing digital addiction",
+        "title_ko": "디지털 중독 관리하기",
+        "description_en": "Users concerned about excessive screen time receive guidance and support from a conversational agent on creating healthier habits.",
+        "description_ko": "지나친 스크린 타임이 걱정되는 사용자들이 에이전트로부터 건강한 디지털 습관을 형성하는 방법에 대한 조언을 받습니다."
+    },
+    {
+        "index": 12,
+        "category": "Emotional Support",
+        "title_en": "Coping with seasonal affective disorder",
+        "title_ko": "계절성 정서 장애 극복하기",
+        "description_en": "Users affected by seasonal mood changes engage with a conversational agent for strategies to maintain emotional balance throughout the year.",
+        "description_ko": "기분이 계절 변화에 영향을 받는 사용자들이 에이전트와 이야기하며 정서적 균형을 유지할 수 있는 전략을 배웁니다."
+    },
+    {
+        "index": 13,
+        "category": "Emotional Support",
+        "title_en": "Addressing fears of commitment",
+        "title_ko": "장기적 관계에 대한 두려움 극복하기",
+        "description_en": "Users anxious about long-term commitments seek advice from a conversational agent on understanding and overcoming these fears.",
+        "description_ko": "장기적인 관계에 대한 불안을 느끼는 사용자들이 에이전트와 대화하며 이해하고 극복할 수 있는 방법을 찾습니다."
+    },
+    {
+        "index": 14,
+        "category": "Emotional Support",
+        "title_en": "Coping with financial stress",
+        "title_ko": "재정적 스트레스 극복하기",
+        "description_en": "Users worried about finances talk with a chatbot for reassurance and advice on budgeting and financial planning.",
+        "description_ko": "재정 문제로 고민하는 사용자들이 에이전트와 상담하며 안심하고, 예산 관리 및 재정 계획에 대한 조언을 받습니다."
+    },
+    {
+        "index": 15,
+        "category": "Emotional Support",
+        "title_en": "Boosting self-confidence",
+        "title_ko": "자신감 향상시키기",
+        "description_en": "Users struggling with low self-esteem talk with a conversational agent for encouragement, engaging in exercises that highlight their strengths and achievements.",
+        "description_ko": "자존감이 낮은 사용자들이 에이전트와 대화하며 격려를 받고, 자신의 강점과 성취를 강조하는 연습을 합니다."
+    },
+    {
+        "index": 16,
+        "category": "Emotional Support",
+        "title_en": "Coping with loneliness",
+        "title_ko": "외로움 극복하기",
+        "description_en": "Users feeling isolated share their feelings with a conversational agent, which provides empathy and suggests activities or groups to connect with others.",
+        "description_ko": "외로움을 느끼는 사용자들이 에이전트와 대화하며 공감을 받고, 타인과 연결될 수 있는 활동이나 모임을 추천받습니다."
+    },
+    {
+        "index": 17,
+        "category": "Emotional Support",
+        "title_en": "Handling difficult family dynamics",
+        "title_ko": "복잡한 가족 관계 다루기",
+        "description_en": "Users facing family challenges seek guidance from a conversational agent, which offers empathy and strategies for effective communication and setting boundaries.",
+        "description_ko": "가족 문제로 어려움을 겪는 사용자들이 에이전트와 대화하며 공감을 받고, 효과적인 의사소통과 경계를 설정하는 전략을 배웁니다."
+    },
+    {
+        "index": 18,
+        "category": "Emotional Support",
+        "title_en": "Navigating friendships",
+        "title_ko": "친구 관계 탐색하기",
+        "description_en": "Users facing challenges in friendships receive guidance from a conversational agent on communication and setting boundaries.",
+        "description_ko": "친구 관계에 어려움을 겪고 있는 사용자들이 에이전트로부터 커뮤니케이션과 바운더리 설정에 대해 이야기합니다."
+    },
+    {
+        "index": 19,
+        "category": "Emotional Support",
+        "title_en": "Coping with burnout",
+        "title_ko": "번아웃 다루기",
+        "description_en": "Users facing burnout talk with a conversational agent who discusses the importance of self-care, setting boundaries, and seeking professional help when needed.",
+        "description_ko": "번아웃에 직면한 사용자들이 에이전트와 자기 관리의 중요성, 경계 설정, 필요 시 전문가의 도움 요청에 대해 이야기합니다."
+    },
+    {
+        "index": 20,
+        "category": "Emotional Support",
+        "title_en": "Exploring identity issues",
+        "title_ko": "정체성 문제 탐색하기",
+        "description_en": "Users questioning aspects of their identity engage with a chatbot that offers a safe space for exploration and resources for support.",
+        "description_ko": "자신의 정체성에 대해 고민하는 사용자들이 에이전트와 대화하며 안전한 탐색 공간에서 이해를 얻습니다."
+        
+    },
+    {
+        "index": 21,
+        "category": "Emotional Support",
+        "title_en": "Managing guilt",
+        "title_ko": "죄책감 다루기",
+        "description_en": "Users dealing with feelings of guilt discuss ways to forgive themselves and move forward with a conversational agent.",
+        "description_ko": "죄책감을 느끼는 사용자들이 에이전트와 대화하며 자신을 용서하고 앞으로 나아가는 방법을 찾습니다."
+    },
+    {
+        "index": 22,
+        "category": "Emotional Support",
+        "title_en": "Handling rejection",
+        "title_ko": "거절 경험 극복하기",
+        "description_en": "Users dealing with rejection in personal or professional life talk to a chatbot for support, encouragement, and advice on resilience.",
+        "description_ko": "개인적 또는 직업적 거절을 경험한 사용자들이 에이전트와 대화하며 위로를 받고, 회복력을 기르는 방법을 배웁니다."
+    },
+    {
+        "index": 23,
+        "category": "Emotional Support",
+        "title_en": "Coping with chronic illness",
+        "title_ko": "만성 질환 극복하기",
+        "description_en": "Users living with chronic health conditions talk with a conversational agent for emotional support and strategies to manage their well-being.",
+        "description_ko": "만성 건강 문제를 가진 사용자들이 에이전트와 대화하며 정서적 지원을 받고, 건강을 관리하는 전략을 배웁니다."
+    },
+    {
+        "index": 24,
+        "category": "Emotional Support",
+        "title_en": "Finding life purpose",
+        "title_ko": "삶의 목적 찾기",
+        "description_en": "Users feeling lost in life converse with a conversational agent to explore their interests and discover their life purpose.",
+        "description_ko": "삶의 방향을 잃은 사용자들이 에이전트와 대화하며 자신의 관심사를 탐색하고 삶의 목적을 발견합니다."
+    },
+    {
+        "index": 25,
+        "category": "Emotional Support",
+        "title_en": "Dealing with grief",
+        "title_ko": "슬픔과 애도 다루기",
+        "description_en": "Users mourning the loss of a loved one talk to a conversational agent for comfort and guidance through the grieving process.",
+        "description_ko": "사랑하는 존재를 잃은 사용자들이 에이전트와 대화하며 위로를 받고, 애도 과정을 헤쳐 나가는 방법을 배웁니다."
+    },
+    {
+        "index": 26,
+        "category": "Appraisal Support",
+        "title_en": "Building Resilience",
+        "title_ko": "회복탄력성 구축하기",
+        "description_en": "Users engage with a chatbot to develop resilience strategies for overcoming challenges and setbacks.",
+        "description_ko": "사용자들이 에이전트와 상호작용하며 도전과 좌절을 극복하는 회복탄력성 전략을 개발합니다."
+    },
+    {
+        "index": 27,
+        "category": "Appraisal Support",
+        "title_en": "Time management assessment",
+        "title_ko": "시간 관리 평가 받기",
+        "description_en": "Users evaluate their time management skills with a conversational agent, focusing on prioritization, scheduling, and minimizing distractions.",
+        "description_ko": "사용자들이 에이전트와 함께 자신의 시간 관리 능력을 평가하며, 우선순위 설정, 일정 조정 및 방해 요소 최소화에 대해 논의합니다."
+    },
+    {
+        "index": 28,
+        "category": "Appraisal Support",
+        "title_en": "Improving self-discipline",
+        "title_ko": "자기 절제력 향상시키기",
+        "description_en": "Users discuss their self-discipline habits with a conversational agent, exploring techniques for maintaining focus and achieving goals.",
+        "description_ko": "사용자들이 에이전트와 함께 자기 절제 습관에 대해 논의하며, 집중력을 유지하고 목표를 달성하는 기술을 탐색합니다."
+    },
+    {
+        "index": 29,
+        "category": "Appraisal Support",
+        "title_en": "Analyzing career satisfaction",
+        "title_ko": "직업 만족도 분석하기",
+        "description_en": "Users reflect on their current job satisfaction with a conversational agent and discuss ways to enhance their career fulfillment.",
+        "description_ko": "사용자들이 에이전트와 함께 현재 직업의 만족도를 되돌아보고, 직업적 성취감을 높이는 방법을 논의합니다."
+    },
+    {
+        "index": 30,
+        "category": "Appraisal Support",
+        "title_en": "Improving empathy skills",
+        "title_ko": "공감 능력 향상시키기",
+        "description_en": "Users discuss with a conversational agent about how to become more empathetic in personal and professional settings.",
+        "description_ko": "사용자들이 에이전트와 함께 개인 및 직업적 환경에서 공감 능력을 향상시키는 방법에 대해 논의합니다."
+    },
+    {
+        "index": 31,
+        "category": "Appraisal Support",
+        "title_en": "Improving goal achievement strategies",
+        "title_ko": "목표 달성 전략 개선하기",
+        "description_en": "Users discuss with a conversational agent about how to develop effective strategies for achieving their goals.",
+        "description_ko": "사용자들이 에이전트와 함께 효과적인 목표 달성 전략을 개발하는 방법에 대해 논의합니다."
+    },
+    {
+        "index": 32,
+        "category": "Appraisal Support",
+        "title_en": "Assessing Learning Styles",
+        "title_ko": "학습 스타일 평가 받기",
+        "description_en": "Users explore their preferred learning styles by discussing different methods of absorbing information and how to apply them effectively with a conversational agent.",
+        "description_ko": "사용자들이 에이전트와 상호작용하며 자신에게 맞는 학습 스타일을 탐색하고, 정보를 효과적으로 적용하는 방법을 배웁니다."
+    },
+    {
+        "index": 33,
+        "category": "Appraisal Support",
+        "title_en": "Assessing Interpersonal Skills",
+        "title_ko": "대인관계 능력 평가 받기",
+        "description_en": "Users seek to improve their interactions with others by discussing empathy, communication, and relationship-building with a conversational agent.",
+        "description_ko": "사용자들이 에이전트와 함께 공감, 의사소통 및 관계 형성에 대해 논의하며 대인관계 스킬을 향상시킵니다."
+    },
+    {
+        "index": 34,
+        "category": "Appraisal Support",
+        "title_en": "Developing Influence",
+        "title_ko": "영향력 개발하기",
+        "description_en": "Users seek to increase their influence by discussing persuasion techniques and building credibility with a conversational agent.",
+        "description_ko": "사용자들이 에이전트와 함께 설득 기술과 신뢰 구축 전략을 논의하며 영향력을 키웁니다."
+    },
+    {
+        "index": 35,
+        "category": "Appraisal Support",
+        "title_en": "Career Transitioning",
+        "title_ko": "커리어 변경 지원하기",
+        "description_en": "Users looking to change careers chat with a conversational agent about evaluating transferable skills and identifying new career opportunities.",
+        "description_ko": "커리어를 바꾸고자 하는 사용자들이 에이전트와 대화하며 이전 가능한 기술을 평가하고 새로운 경력 기회를 파악할 수 있습니다."
+    },
+    {
+        "index": 36,
+        "category": "Appraisal Support",
+        "title_en": "Developing mindfulness practices",
+        "title_ko": "마음챙김 연습 개발하기",
+        "description_en": "Users seek guidance from a chatbot on enhancing their interpersonal skills for better relationships.",
+        "description_ko": "사용자들이 에이전트의 안내를 받아 더 나은 관계를 위해 대인관계 기술을 향상시키는 마음챙김 연습을 합니다."
+    },
+    {
+        "index": 37,
+        "category": "Appraisal Support",
+        "title_en": "Identifying and overcoming biases",
+        "title_ko": "편견 식별 및 극복하기",
+        "description_en": "Users engage with a chatbot to explore personal biases and strategies for mitigating their impact.",
+        "description_ko": "사용자들이 에이전트와 함께 개인적인 편견을 탐색하고, 그 영향을 줄이는 전략을 논의합니다."
+    },
+    {
+        "index": 38,
+        "category": "Appraisal Support",
+        "title_en": "Improving feedback reception skills",
+        "title_ko": "피드백 수용 능력 향상시키기",
+        "description_en": "Users explore how to receive and utilize feedback effectively by discussing strategies with a conversational agent.",
+        "description_ko": "사용자들이 에이전트와 함께 피드백을 효과적으로 받아들이고 활용하는 방법을 논의합니다."
+    },
+    {
+        "index": 39,
+        "category": "Appraisal Support",
+        "title_en": "Evaluating financial literacy",
+        "title_ko": "금융 이해도 평가 받기",
+        "description_en": "Users explore their understanding of financial concepts with a conversational agent, seeking to improve budgeting, investing, and financial planning.",
+        "description_ko": "사용자들이 에이전트와 함께 금융 개념을 탐색하며 예산 관리, 투자 및 재정 계획 능력을 향상시킵니다."
+    },
+    {
+        "index": 40,
+        "category": "Appraisal Support",
+        "title_en": "Assessing networking strategies",
+        "title_ko": "네트워킹 전략 평가 받기",
+        "description_en": "Users seek to improve their networking abilities by discussing strategies and techniques for building professional connections with a conversational agent.",
+        "description_ko": "사용자들이 에이전트와 상호작용하며 네트워킹 전략과 전문적인 인맥을 형성하는 기술을 향상시킵니다."
+    },
+    {
+        "index": 41,
+        "category": "Appraisal Support",
+        "title_en": "Understanding conflict resolution techniques",
+        "title_ko": "갈등 해결 기술 이해하기",
+        "description_en": "Users aim to become better at resolving conflicts by discussing strategies and techniques with a conversational agent.",
+        "description_ko": "사용자들이 에이전트와 함께 갈등을 효과적으로 해결하는 전략과 기술을 논의합니다."
+    },
+    {
+        "index": 42,
+        "category": "Appraisal Support",
+        "title_en": "Improving cultural competence",
+        "title_ko": "문화적 역량 향상시키기",
+        "description_en": "Users discuss their cultural awareness with a chatbot, receiving feedback on inclusivity and openness.",
+        "description_ko": "사용자들이 에이전트와 함께 문화적 인식을 탐색하고 포용성과 개방성에 대한 피드백을 받습니다."
+    },
+    {
+        "index": 43,
+        "category": "Appraisal Support",
+        "title_en": "Evaluating Self-Improvement Strategies",
+        "title_ko": "자기 개선 전략 평가받기",
+        "description_en": "Users assess their approach to self-improvement by discussing goals, habits, and motivation with a conversational agent.",
+        "description_ko": "사용자들이 에이전트와 목표, 습관, 동기 부여에 대해 논의하여 자기 계발에 대한 자신의 접근 방식을 평가합니다."
+    },
+    {
+        "index": 44,
+        "category": "Appraisal Support",
+        "title_en": "Evaluating leadership potential",
+        "title_ko": "리더십 잠재력 평가 받기",
+        "description_en": "Users explore their leadership potential by discussing traits and behaviors with a conversational agent to identify strengths and areas for growth.",
+        "description_ko": "사용자들이 에이전트와 리더십 특성과 행동을 논의하며 강점과 성장 가능성을 평가합니다."
+    },
+    {
+        "index": 45,
+        "category": "Appraisal Support",
+        "title_en": "Evaluating multitasking abilities",
+        "title_ko": "멀티태스킹 능력 평가 받기",
+        "description_en": "Users discuss their multitasking skills with a chatbot, exploring strategies for managing multiple tasks efficiently without sacrificing quality.",
+        "description_ko": "사용자들이 에이전트와 함께 멀티태스킹 기술을 논의하며, 품질을 유지하면서 여러 작업을 효율적으로 관리하는 전략을 탐색합니다."
+    },
+    {
+        "index": 46,
+        "category": "Appraisal Support",
+        "title_en": "Enhancing customer service skills",
+        "title_ko": "고객 서비스 기술 향상시키기",
+        "description_en": "Users seek to improve their customer service abilities by discussing techniques and best practices with a conversational agent.",
+        "description_ko": "사용자들이 에이전트와 고객 서비스 기술 및 모범 사례를 논의하며 역량을 향상시킵니다."
+    },
+    {
+        "index": 47,
+        "category": "Appraisal Support",
+        "title_en": "Evaluating adaptability to change",
+        "title_ko": "변화 적응력 평가 받기",
+        "description_en": "Users discuss with a chatbot their ability to adapt to change, receiving feedback and strategies to become more flexible.",
+        "description_ko": "사용자들이 에이전트와 변화에 대한 적응력을 논의하고, 더 유연해질 수 있는 피드백과 전략을 받습니다."
+    },
+    {
+        "index": 48,
+        "category": "Appraisal Support",
+        "title_en": "Assessing Physical Fitness",
+        "title_ko": "체력 평가 받기",
+        "description_en": "Users evaluate their physical fitness levels by discussing workout routines, nutrition, and health goals with a chatbot.",
+        "description_ko": "사용자들이 에이전트와 운동 루틴, 영양 및 건강 목표에 대해 논의하여 자신의 체력 수준을 평가합니다."
+    },
+    {
+        "index": 49,
+        "category": "Appraisal Support",
+        "title_en": "Analyzing work-life balance",
+        "title_ko": "일과 삶의 균형 분석하기",
+        "description_en": "Users seek advice from a conversational agent on evaluating their work-life balance and strategies to improve time allocation.",
+        "description_ko": "사용자들이 에이전트와 함께 일과 삶의 균형을 평가하고, 시간을 효과적으로 배분하는 전략을 논의합니다."
+    },
+    {
+        "index": 50,
+        "category": "Appraisal Support",
+        "title_en": "Evaluating risk-taking behavior",
+        "title_ko": "위험 감수 행동 평가 받기",
+        "description_en": "Users evaluate their comfort with taking risks by discussing scenarios and strategies with a chatbot.",
+        "description_ko": "사용자들이 에이전트와 위험 감수 행동을 논의하며, 다양한 상황에서 위험을 감수하는 편안함을 평가하고 전략을 세웁니다."
+    },
+    {
+        "index": 51,
+        "category": "Informational Support",
+        "title_en": "Understanding human rights",
+        "title_ko": "인권 이해하기",
+        "description_en": "Users want to know more about human rights. A conversational agent explains their history, key principles, and current global issues.",
+        "description_ko": "인권에 대해 더 알고 싶어 하는 사용자들에게 에이전트는 인권의 역사, 핵심 원칙, 현재 글로벌 이슈를 설명합니다."
+    },
+    {
+        "index": 52,
+        "category": "Informational Support",
+        "title_en": "Exploring interior design",
+        "title_ko": "인테리어 디자인 탐색하기",
+        "description_en": "Users want to redesign their living spaces. A conversational agent offers tips on space utilization, color schemes, and decor styles.",
+        "description_ko": "자신의 거주 공간을 새롭게 디자인하고 싶어 하는 사용자들에게 에이전트는 공간 활용, 색상 조합, 장식 스타일에 대한 팁을 제공합니다."
+    },
+    {
+        "index": 53,
+        "category": "Informational Support",
+        "title_en": "Exploring mythology",
+        "title_ko": "신화 탐색하기",
+        "description_en": "Users fascinated by myths engage with a chatbot to learn about different cultures' mythologies, legendary creatures, and folklore.",
+        "description_ko": "신화에 관심있는 사용자들에게 에이전트는 다양한 문화의 신화, 전설적인 생물, 민속 이야기를 제공합니다."
+    },
+    {
+        "index": 54,
+        "category": "Informational Support",
+        "title_en": "Exploring the gig economy",
+        "title_ko": "긱 경제 이해하기",
+        "description_en": "Users want to understand freelance work. A conversational agent provides insights into gig opportunities, platforms, and managing freelance careers.",
+        "description_ko": "프리랜서 근무 방식에 대해 알고 싶어 하는 사용자들에게 에이전트는 긱 경제의 기회, 플랫폼, 프리랜서 경력 관리에 대한 정보를 제공합니다."
+    },
+    {
+        "index": 55,
+        "category": "Informational Support",
+        "title_en": "Home maintenance tips",
+        "title_ko": "집 관리 팁 제공 받기",
+        "description_en": "The agent provides users with essential home maintenance tips, including fixing leaks, maintaining appliances, and keeping rooms clean.",
+        "description_ko": "사용자들에게 에이전트는 누수 수리, 가전제품 유지 관리, 방 청결 유지 등 기본적인 집 관리 팁을 제공합니다."
+    },
+    {
+        "index": 56,
+        "category": "Informational Support",
+        "title_en": "Exploring historical events",
+        "title_ko": "역사적 사건 탐색하기",
+        "description_en": "Users interested in history discuss significant historical events and their impacts with a conversational agent.",
+        "description_ko": "역사에 관심 있는 사용자들에게 에이전트는 중요한 역사적 사건과 그 영향에 대해 이야기합니다."
+    },
+    {
+        "index": 57,
+        "category": "Informational Support",
+        "title_en": "Understanding the stock market",
+        "title_ko": "주식 시장 이해하기",
+        "description_en": "Users curious about investing engage with a conversational agent that explains stock market basics, investment strategies, and market trends.",
+        "description_ko": "투자에 관심 있는 사용자들에게 에이전트는 주식 시장의 기초, 투자 전략, 시장 동향을 제공합니다."
+    },
+    {
+        "index": 58,
+        "category": "Informational Support",
+        "title_en": "Learning about wildlife conservation",
+        "title_ko": "야생동물 보호 방법 배우기",
+        "description_en": "Users are interested in protecting wildlife. A conversational agent provides information on conservation efforts, endangered species, and ways to contribute.",
+        "description_ko": "야생동물을 보호하는 방법에 관심이 있는 사용자들에게 에이전트는 보호 노력, 멸종 위기종, 기여할 수 있는 방법에 대한 정보를 제공합니다."
+    },
+    {
+        "index": 59,
+        "category": "Informational Support",
+        "title_en": "Healthy eating habits",
+        "title_ko": "건강한 식습관 만들기",
+        "description_en": "Users want to adopt healthier eating habits. A conversational agent shares nutritional advice, meal planning tips, and healthy recipes.",
+        "description_ko": "더 건강한 식습관을 원하는 사용자들에게 에이전트는 영양 조언, 식단 계획 팁, 건강한 레시피를 제공합니다."
+    },
+    {
+        "index": 60,
+        "category": "Informational Support",
+        "title_en": "Buying a home",
+        "title_ko": "주택 구매하기",
+        "description_en": "Users planning to buy a home receive guidance on the buying process, mortgage options, and what to look for from a conversational agent.",
+        "description_ko": "집을 구매하려는 사용자들에게 에이전트는 구매 과정, 모기지 옵션, 고려해야 할 사항에 대한 조언을 제공합니다."
+    },
+    {
+        "index": 61,
+        "category": "Informational Support",
+        "title_en": "Travel planning",
+        "title_ko": "여행 계획하기",
+        "description_en": "Users plan trips by chatting with conversational agents about preparing for travel, cool places to visit, food spots to try, and useful local tips.",
+        "description_ko": "사용자들은 여행 준비, 추천 명소, 맛집, 현지 팁 등에 대해 에이전트와 이야기하며 여행을 계획합니다."
+    },
+    {
+        "index": 62,
+        "category": "Informational Support",
+        "title_en": "Improving public speaking skills",
+        "title_ko": "공개 연설 기술 향상시키기",
+        "description_en": "Users nervous about public speaking engage with a conversational agent that offers techniques for confidence, clarity, and audience engagement.",
+        "description_ko": "공개 연설에 긴장하는 사용자들에게 에이전트는 자신감 향상, 명확한 전달법, 청중 참여 기술을 제공합니다."
+    },
+    {
+        "index": 64,
+        "category": "Informational Support",
+        "title_en": "Exploring literature genres",
+        "title_ko": "문학 장르 탐색하기",
+        "description_en": "Book lovers use a chatbot to discover different literary genres, famous authors, and reading recommendations.",
+        "description_ko": "책을 좋아하는 사용자들과 에이전트는 다양한 문학 장르, 유명 작가, 추천 도서를 탐색합니다."
+    },
+    {
+        "index": 65,
+        "category": "Informational Support",
+        "title_en": "Exploring photography tips",
+        "title_ko": "사진 촬영 팁 배우기",
+        "description_en": "Aspiring photographers use a chatbot to learn about camera settings, composition techniques, and editing software.",
+        "description_ko": "사진에 관심 있는 사용자들은 에이전트에게 카메라 설정, 구도 기술, 사진 편집 소프트웨어에 대해 배웁니다."
+    },
+    {
+        "index": 66,
+        "category": "Informational Support",
+        "title_en": "Planning a wedding",
+        "title_ko": "결혼식 계획하기",
+        "description_en": "Engaged users discuss wedding planning with a conversational agent, receiving advice on budgeting, venue selection, and managing guest lists.",
+        "description_ko": "사용자들은 에이전트와 결혼식 계획을 논의하며 예산 설정, 장소 선택, 게스트 리스트 관리에 대한 조언을 받습니다."
+    },
+    {
+        "index": 67,
+        "category": "Informational Support",
+        "title_en": "Understanding fitness routines",
+        "title_ko": "운동 루틴 이해하기",
+        "description_en": "Users want to start a fitness routine. A conversational agent provides information on exercise types, benefits, and how to create a balanced routine.",
+        "description_ko": "피트니스 루틴을 시작하려는 사용자들에게 에이전트는 운동 종류, 효과, 균형 잡힌 루틴 구성법에 대한 정보를 제공합니다."
+    },
+    {
+        "index": 68,
+        "category": "Informational Support",
+        "title_en": "Exploring Architecture Styles",
+        "title_ko": "건축 스타일 탐색하기",
+        "description_en": "Users curious about architecture discuss with a conversational agent about different styles, famous buildings, and architectural trends.",
+        "description_ko": "건축에 관심 있는 사용자들과 에이전트는 다양한 건축 스타일, 유명 건축물, 건축 트렌드에 대해 이야기합니다."
+    },
+    {
+        "index": 69,
+        "category": "Informational Support",
+        "title_en": "Exploring entrepreneurship",
+        "title_ko": "기업가 정신 탐색하기",
+        "description_en": "Users interested in starting a business ask for guidance. The conversational agent discusses business planning, funding, and growth strategies.",
+        "description_ko": "창업에 관심 있는 사용자들은 에이전트와 사업 계획, 자금 조달, 성장 전략에 대해 이야기합니다."
+    },
+    {
+        "index": 70,
+        "category": "Informational Support",
+        "title_en": "Exploring new hobbies",
+        "title_ko": "새로운 취미 탐색하기",
+        "description_en": "Users interested in picking up a new hobby receive suggestions on activities, necessary equipment, and beginner tips from a conversational agent.",
+        "description_ko": "새로운 취미를 찾고 있는 사용자들은 에이전트로부터 활동 추천, 필요한 장비, 초보자를 위한 팁을 받습니다."
+    },
+    {
+        "index": 71,
+        "category": "Informational Support",
+        "title_en": "Basics of first aid",
+        "title_ko": "응급 처치 기초 배우기",
+        "description_en": "Users want to learn first aid basics. A conversational agent provides information on handling common emergencies and essential first aid techniques.",
+        "description_ko": "응급 처치의 기초를 배우고 싶어 하는 사용자들에게 에이전트는 일반적인 응급 상황 대처법과 필수 응급 처치 기술을 설명합니다."
+    },
+    {
+        "index": 72,
+        "category": "Informational Support",
+        "title_en": "Exploring space science",
+        "title_ko": "우주 과학 탐색하기",
+        "description_en": "Users interested in space science receive information on recent discoveries, space missions, and future explorations from a conversational agent.",
+        "description_ko": "우주 과학에 관심 있는 사용자들에게 에이전트는 최근 연구, 우주 탐사, 미래 탐험에 대한 정보를 제공합니다."
+    },
+    {
+        "index": 73,
+        "category": "Informational Support",
+        "title_en": "Learning about marine biology",
+        "title_ko": "해양 생물학 학습하기",
+        "description_en": "Users curious about marine life engage with a conversational agent that shares information on ocean ecosystems, species, and conservation efforts.",
+        "description_ko": "해양 생물에 관심 있는 사용자들은 에이전트와 해양 생태계, 종 다양성, 보호 노력에 대해 배웁니다."
+    },
+    {
+        "index": 74,
+        "category": "Informational Support",
+        "title_en": "Gardening tips for beginners",
+        "title_ko": "정원 가꾸기 팁 제공 받기",
+        "description_en": "Users interested in starting a garden receive advice from a conversational agent on plant types, soil preparation, and maintenance.",
+        "description_ko": "정원 가꾸기를 시작하려는 사용자들에게 에이전트는 식물 종류, 토양 준비, 유지 관리에 대한 조언을 제공합니다."
+    },
+    {
+        "index": 75,
+        "category": "Informational Support",
+        "title_en": "Exploring Craft Beer",
+        "title_ko": "수제 맥주 탐색하기",
+        "description_en": "Users interested in craft beer discuss with a conversational agent about brewing techniques, popular styles, and tasting tips.",
+        "description_ko": "수제 맥주에 관심 있는 사용자들과 에이전트는 양조 기술, 인기 스타일, 시음 팁에 대해 이야기합니다."
+    },
+    {
+        "index": 76,
+        "category": "Informational Support",
+        "title_en": "Pet care guidance",
+        "title_ko": "펫 케어 안내 받기",
+        "description_en": "Users wanting to take better care of their pets consult a conversational agent about diet, exercise, grooming, and health checkups.",
+        "description_ko": "반려동물을 더 잘 돌보고 싶은 사용자들에게 에이전트는 식단, 운동, 미용, 건강 검진에 대해 이야기합니다."
+    }
+]
